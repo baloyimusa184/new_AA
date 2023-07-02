@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Allies</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="Alpine.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Content goes here -->
+        <section>
+        <img src="Handshake.png" height="180px" width="180px">
+    </section>
+    <p style="font-size: 10px; color: #ffffff; font-weight: bold;">Home</p>
+    <br>
+</section>
+      </div>
+    
+
+<div x-data = "{founderButton : false, about: false}">
+
+<!--This is a section for user to choose what to view-->
+
+<hr>
+    <section>
+
+    <section>
+        <div class="container2"
+        <div style="text-align: center;">
+            <p style="font-size: 40px; color: #ffffff; font-weight: bold;" >About the founder</p>        
+        <button @click="founderButton = !founderButton" width="50px" height="50px">Open/Close</button>
+    </section>
+    <!--show founder section when user press above (founder) button-->
+    <section>
+        <!--The grid-->
+        <span x-show="founderButton">
+            <div class="row">
+                <div class="col s6">
+                <div style="text-align: left;">
+                <p>Full name: Musa Baloyi</p>
+                <p>Qualification: Bachelor of Engineering Tech in Electrical Engineering</p>
+                <p>Private tutor with 5+ years of experience</p>
+                <p>Full-Stack Web Developer</p></div>
+                
+                </div>
+                <div class="col s6"><img src="myPic.jpg" width="150px" height="150px"></div>
+              </div>
+        </span>
+    </section>
+<hr>
+    <br>
+   
+    <div style="text-align: center;">
+        <div class="container3">
+            <p style="font-size: 40px; color: #0e0238; font-weight: bold;" >Services</p>  
+    <section class="services">
+           <!--Put a background image-->
+        <a href="services.html"><button>Open</button></a>
+    </section>  
+        </div>     
+    </div>
+<hr>
+    <br>
+
+    <section>
+          <div class="container1">
+          <div style="text-align: center;">
+          <p style="font-size: 40px; color: #ffffff; font-weight: bold;" >About Academic Allies</p>
+          <button @click="about=!about">Open/Close</button>
+          
+          <span x-show="about">
+            <div style="text-align: center;">
+                <p style="font-size: 20px; color: #ffffff;"><strong>
+            Academic Allies is a tutoring establishment that assist learners with making their academic career easy.
+            It was founded by Musa Baloyi with the aim to use his tutoring skills for the benefits of the society. Realising that most
+            of the children and young adults struggle to keep up with their academic journey, it only takes a responsibility for one to bring a change
+            and be active in the community.
+            </strong>
+            </p>
+            </div>
+          </span>
+          </div>
+        </div>
+    </section>
+
+    </section> 
+</div>
+
+<hr><br>
+
+    <footer class="page-footer">
+       
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contacts</h5>
+              <p class="grey-text text-lighten-4">Johannesburg 645 Rooihartbees Rd 1804</p>
+              <p>Tell: +27614700109</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">
+                    <a href="https://www.facebook.com/profile.php?id=100093139755931">Facebook</a>
+                </a></li>
+                <li><a class="grey-text text-lighten-3" href="#!"><a href="terms.html"><strong>Terms</strong></a></a></li>
+              </ul>
+            </div>
+          
+        </div>
+        <div class="footer-copyright">
+          
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
+          </div>
+       
+      </footer>
+
+</body>
+</html>

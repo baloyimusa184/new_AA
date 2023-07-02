@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="//unpkg.com/alpinejs" defer></script> 
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div x-data = "{
+        gradesContent: false,
+        highGrades: false
+    }">
+
+<div class="container4"><a href="index.html"><button>Home</button></a></div>
+    
+    <hr>
+    <br>
+
+    <!--The grid with Subjects and grades information-->
+  
+
+    <div style="text-align: center;">
+        <p style="font-size: 40px; color: #ff8000; font-weight: bold;" >Grades, Subjects & Rates</p>
+      </div>
+
+    <div style="text-align: center;"> <img class="responsive-img" src="6339547.jpg" width="150" height="150"></div>
+  
+    <div style="text-align:center;"><section>
+    <p>Grade 8-9, <strong>R200 p/m</strong></p>
+    <button @click="gradesContent = !gradesContent">Subjects</button>    
+    <ul x-show="gradesContent" @click.away="gradesContent = false">
+    <li>Mathematics</li>
+    <li>Social Sciences</li>
+    <li>English</li>
+    <li>Natural Sciences</li>
+  </ul>
+</section>
+    
+ <br>
+<section>
+    <p>Grade 10 - 12 including upgrading, <strong>R200 p/m</strong></p>
+    <button @click="highGrades = !highGrades">Subjects</button>
+    <ul x-show="highGrades" @click.away="highGrades = false">
+    <span x-show="highGrades"> 
+    <p>Mathematics</p>
+    <p>Physical Sciences</p>
+    </ul> 
+</section>
+
+<section>
+</div></div>
+<hr>
+
+<div style="text-align:center;">
+    <h1 style="font-size: 40px; color: #ff7b00; font-weight: bold;">Benefits That Come With Academic Allies Tutorials
+</h1>
+</div>
+
+    <div class="collection">
+        <a href="#!" class="collection-item"><span class=" badge">enhance understanding</span>One on one attention</a>
+        <a href="#!" class="collection-item"><span class=" badge">Time is negotiable</span>Flexible Times</a>
+        <a href="#!" class="collection-item"><span class="badge">Online tutorials</span>Online learning</a>
+        <a href="#!" class="collection-item"><span class="badge">for exam preparation</span>Question Papers</a>
+      </div>
+</section>
+</body>
+</html>
+

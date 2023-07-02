@@ -1,0 +1,45 @@
+.centered-text {
+    text-align: center;
+  }
+
+  .container {
+    background-image: url('solid-color-plain-single-violet-one-colour-1280x720-c-351544-f-24.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .container1 {
+    background-image: url('gradient-linear-pink-orange-1280x720-c2-ffa500-ff1493-a-0-f-14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container2 {
+    background-image: url('stud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container3 {
+    background-image: url('6339547.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container4 {
+    background-image: url('group-five-african-college-students-spending-time-together-campus-university-yard-black-afro-friends-studying-education-theme.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
